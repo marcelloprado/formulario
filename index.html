@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+    <div class="container-fundo">
+        <section class="conteudo">
+            <div class="texto">
+                <h1>Ficou Com Dúvidas? Nos Mande Uma Mensagem!</h1>
+                <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos
+                    de 24h.</p>
+            </div>
+
+            <form class="formulario" id="form" method="post" action="">
+
+                <input class="inputs" type="text" name="nome" id="nome" placeholder="Nome completo *">
+                <!-- <small>Campo Obrigatório</small> -->
+
+                <input class="inputs" type="email" name="email" id="email" placeholder="E-mail *">
+                <!-- <small>Campo Obrigatório</small> -->
+
+                <input class="inputs" type="number" name="telefone" id="telefone" placeholder="Telefone *">
+                <!-- <small>Campo Obrigatório</small> -->
+
+                <textarea class="inputs" name="mensagen" id="mensagen" cols="20" rows="7" placeholder="Mensagen *">
+                </textarea>
+
+                <h4>* Campos obrigatórios</h4>
+
+                <button class="btn" type="submit" value="Enviar">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <script alt="text/javascript" src="/src/js/script.js"></script>
+</body>
+
+</html>

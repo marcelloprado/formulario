@@ -1,0 +1,71 @@
+.container-fundo {
+
+    background: url(/src/imagens/bg-repeat.jpg);
+
+    background-repeat: repeat;
+}
+
+.conteudo {
+    max-width: 785px;
+    max-height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    padding: 20px;
+
+}
+
+.conteudo .texto h1 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+    width: 300px;
+}
+
+.conteudo .texto p {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px;
+}
+
+.inputs {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 9px 162px 10px 9px;
+}
+
+.formulario .btn {
+    background-color: #3CCC87;
+    color: #FFF;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    opacity: 0.9;
+    margin-top: 20px;
+
+}
+
+/* VALIDAÇÃO */
+
+.formulario.successo {
+    border: 1px solid #00C22B;
+}
+
+.formulario.erro {
+    border: 1px solid #F52E2E;
+}
