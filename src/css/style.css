@@ -76,13 +76,8 @@ small {
 
 .inputs.erro {
     border: 1px solid #F52E2E;
-    
-}
-.inputs.erro small {
     visibility: visible;
     
-    margin-top:0;
-    font-size: 0;
-    margin-bottom: 15px;
 }
+
  

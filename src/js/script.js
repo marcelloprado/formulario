@@ -34,9 +34,9 @@ function erroValidacao(input, message) {
 
    nome.classList = 'inputs erro'
 
-//    small.classList = 'inputs erro small'
-    // small.className = 'inputs erro small'
-   small.innerHTML = (message)
-        console.log(small);
+   small.classList = 'inputs erro'
+    // small.className = 'inputs erro'
+//    small.innerText = 'inputs erro'
+        console.log(small.classList);
    
 }
