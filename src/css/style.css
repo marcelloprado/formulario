@@ -43,10 +43,18 @@
 }
 
 .inputs {
-    border: 1px solid #000;
+    border: 1px solid rgb(133, 130, 130);
     border-radius: 5px;
-    margin-bottom: 15px;
+    
     padding: 9px 162px 10px 9px;
+}
+small {
+    visibility: hidden;
+    margin-top:5px;
+    font-size: 10px;
+    color: #F52E2E;
+    margin-bottom: 15px;
+    
 }
 
 .formulario .btn {
@@ -62,10 +70,19 @@
 
 /* VALIDAÇÃO */
 
-.formulario.successo {
+.inputs.sucesso {
     border: 1px solid #00C22B;
 }
 
-.formulario.erro {
+.inputs.erro {
     border: 1px solid #F52E2E;
+    
 }
+.inputs.erro small {
+    visibility: visible;
+    
+    margin-top:0;
+    font-size: 0;
+    margin-bottom: 15px;
+}
+ 
