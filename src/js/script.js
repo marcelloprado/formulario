@@ -22,21 +22,21 @@ function verificarInputs() {
      if(nomeValue === '') {
        // Mostrar erro
        // Adicionar a classe error
-       erroValidacao(nome, 'Campo Obrigatório')
+       erroValidacao(nome, 'Campo Obrigatório TESTE')
     } else {
         // adicionar a classe de sucesso
     }
 }
 
 function erroValidacao(input, message) {
-    // const inputs = input.parentElement;
+    // const formControl = input.parentElement;
     let small = document.querySelector('small')
 
    nome.classList = 'inputs erro'
 
    small.classList = 'inputs erro'
     // small.className = 'inputs erro'
-//    small.innerText = 'inputs erro'
-        console.log(small.classList);
+   small.innerHTML = message
+        console.log(small);
    
 }
