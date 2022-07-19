@@ -71,8 +71,6 @@ function sucessoValidacao(input) {
     
     input.classList = 'inputs sucesso'
     
-    small.className = 'small'
-
-    small.remove('small erro')
+    small.innerText = ''
     
 }
