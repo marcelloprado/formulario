@@ -14,7 +14,7 @@ form.addEventListener('submit', function (event) {
 
 function verificarInputs() {
     const nomeValue = nome.value.trim();
-    const emailvalue = email.value.trim();
+    const emailValue = email.value.trim();
     const telefoneValue = telefone.value.trim();
     const mensagenvalue = mensagen.value.trim();
     // trim => serve para retirar os espaços do inicio e do fim do input deixado pelo usuário.
@@ -22,21 +22,57 @@ function verificarInputs() {
      if(nomeValue === '') {
        // Mostrar erro
        // Adicionar a classe error
-       erroValidacao(nome, 'Campo Obrigatório TESTE')
+       erroValidacao(nome, '*Campo Obrigatório')
     } else {
         // adicionar a classe de sucesso
+        sucessoValidacao(nome)
+    }
+
+    if (emailValue === '') {
+        erroValidacao(email, '*Campo Obrigatório')
+
+    } else {
+        sucessoValidacao(email)
+    }
+
+    if (telefoneValue === '') {
+        erroValidacao(telefone, '*Campo Obrigatório')
+
+    } else {
+        sucessoValidacao(telefone)
+    }
+
+    if (mensagenvalue === '') {
+        erroValidacao(mensagen, '*Campo Obrigatório')
+
+    } else {
+        sucessoValidacao(mensagen)
     }
 }
 
 function erroValidacao(input, message) {
-    // const formControl = input.parentElement;
-    let small = document.querySelector('small')
+    
+    input.className = 'inputs erro'
+    
+    // Validação "Campo obrigatório"
+    
+    const formControl = input.parentElement;
+    let small = formControl.querySelector('small')
+    
+    small.innerText = message
+    
+    
 
-   nome.classList = 'inputs erro'
+}
 
-   small.classList = 'inputs erro'
-    // small.className = 'inputs erro'
-   small.innerHTML = message
-        console.log(small);
-   
+function sucessoValidacao(input) {
+    const formControl = input.parentElement;
+    let small = formControl.querySelector('small')
+    
+    input.classList = 'inputs sucesso'
+    
+    small.className = 'small'
+
+    small.remove('small erro')
+    
 }

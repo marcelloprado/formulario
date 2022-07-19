@@ -45,16 +45,15 @@
 .inputs {
     border: 1px solid rgb(133, 130, 130);
     border-radius: 5px;
-    
+    margin:10px;
     padding: 9px 162px 10px 9px;
 }
-small {
-    visibility: hidden;
+.small {
     margin-top:5px;
     font-size: 10px;
     color: #F52E2E;
-    margin-bottom: 15px;
-    
+    /* margin-bottom: 15px; */
+    /* visibility: hidden; */
 }
 
 .formulario .btn {
@@ -72,11 +71,14 @@ small {
 
 .inputs.sucesso {
     border: 1px solid #00C22B;
+    
 }
 
 .inputs.erro {
     border: 1px solid #F52E2E;
-    visibility: visible;
+    
 }
-
+.small.erro {
+    color:#F52E2E;
+}
  
